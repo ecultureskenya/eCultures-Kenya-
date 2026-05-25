@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eCultures | Our Services</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: "Times New Roman", Times, serif;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Single Cultural Theme Background (Gold-Brown) */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -2;
+      background: linear-gradient(120deg, #8B4513, #D4A017, #8B4513);
+      background-size: cover;
+      opacity: 0.9;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover {
+      color: #FFD700 !important;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    .hero-slide {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 3s ease-in-out;
+      z-index: 0;
+    }
+    .hero-slide.active { opacity: 1; }
+    .color-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Service Cards */
+    .card {
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    /* Section headings */
+    h2.section-title {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: auto;
+      backdrop-filter: blur(6px);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 767px) {
+      .card img { height: 160px; }
+      .hero { height: 40vh; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">eCultures</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cultures.html">Cultures</a></li>
+        <li class="nav-item"><a class="nav-link" href="Cultural Events.html">Recent Cultural Events</a></li>
+        <li class="nav-item"><a class="nav-link active" href="our-services.html">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-slide active" style="background-image: url('assets/services-banner.jpg');"></div>
+  <div class="hero-slide" style="background-image: url('assets/services-2.jpg');"></div>
+  <div class="hero-slide" style="background-image: url('assets/services-3.jpg');"></div>
+  <div class="color-overlay"></div>
+  <div class="hero-content">
+    <h1 class="display-5 fw-bold">Our Services</h1>
+    <p class="lead">Bringing Kenya’s heritage to life — digitally and in communities.</p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<main class="container py-5">
+  <h2 class="section-title text-center">What We Offer</h2>
+
+  <div class="row g-4">
+    <!-- Service 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="assets/archives.png" class="card-img-top" alt="Digital Heritage Archives">
+        <div class="card-body">
+          <h5 class="card-title">Digital Heritage Archives</h5>
+          <p class="card-text">Digitize and preserve photographs, oral histories and artifacts so they remain accessible for future generations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="assets/tour.mt..png" class="card-img-top" alt="Virtual Cultural Tours">
+        <div class="card-body">
+          <h5 class="card-title">Virtual Cultural Tours</h5>
+          <p class="card-text">Immersive 360° tours and guided storytelling experiences that connect learners with communities across Kenya.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="assets/workshop.png" class="card-img-top" alt="Community Workshops">
+        <div class="card-body">
+          <h5 class="card-title">Community Workshops</h5>
+          <p class="card-text">Hands-on sessions that teach artisans, performers and youth skills for cultural preservation and creative enterprise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-3">
+    <!-- Service 4 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="assets/research.doc..png" class="card-img-top" alt="Research & Documentation">
+        <div class="card-body">
+          <h5 class="card-title">Research & Documentation</h5>
+          <p class="card-text">Field research and interviews led by cultural experts to record stories, practices and local histories.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="assets/Edu.png" class="card-img-top" alt="Educational Programs">
+        <div class="card-body">
+          <h5 class="card-title">Educational Programs</h5>
+          <p class="card-text">School outreach, learning packs and teacher resources that bring cultural knowledge into classrooms.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="assets/consult.png" class="card-img-top" alt="Cultural Consultancy">
+        <div class="card-body">
+          <h5 class="card-title">Cultural Consultancy</h5>
+          <p class="card-text">Advisory services for events, media, museums and projects to ensure accurate and respectful representation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-3">
+    <!-- Service 7 -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="assets/events support.png" class="card-img-top" alt="Events Support">
+        <div class="card-body">
+          <h5 class="card-title">Events Support</h5>
+          <p class="card-text">Logistics, promotion and community liaison services to help festivals and exhibitions run smoothly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra column intentionally left for balance or future service -->
+    <div class="col-md-6 d-flex align-items-stretch">
+      <div class="card w-100 d-flex">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h5 class="card-title">Partner With Us</h5>
+          <p class="card-text">Work with us to promote heritage, co-create programs, or fund community projects. We value ethical partnerships that benefit local people.</p>
+          <a href="contactus.html" class="btn btn-light mt-3 align-self-start">Get Involved</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 eCultures Kenya | Knowledge Through Heritage</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const slides = document.querySelectorAll('.hero-slide');
+  let current = 0;
+
+  function changeSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  setInterval(changeSlide, 8000);
+</script>
+</body>
+</html>

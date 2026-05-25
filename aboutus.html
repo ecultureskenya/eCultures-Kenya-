@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | eCultures Kenya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* ---------- General Layout ---------- */
+    body {
+      background: linear-gradient(270deg, #ff9999, #ffcc66, #ff9966, #ffb3b3);
+      background-size: 1200% 1200%;
+      animation: brightShift 20s ease infinite;
+      color: #fff;
+      font-family: "Times New Roman", serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    @keyframes brightShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* ---------- Navbar (Aligned with Home Page) ---------- */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      transition: background 0.6s ease;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+      transition: color 0.6s ease;
+    }
+
+    .nav-link:hover {
+      color: #FFD700 !important;
+      text-shadow: 0 0 8px #FFD700;
+    }
+
+    /* ---------- Section Styling ---------- */
+    .section {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 25px;
+      margin-top: 35px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .section img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+    }
+
+    .btn-read {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #fff;
+      color: #ff4500;
+      border-radius: 25px;
+      padding: 8px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-read:hover {
+      background-color: #ff4500;
+      color: #fff;
+    }
+
+    h2, h3 {
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    /* ---------- Footer (Aligned with Home Page) ---------- */
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      margin-top: auto;
+      transition: all 0.6s ease;
+    }
+
+    footer:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      text-shadow: 0 0 5px #FFD700;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">eCultures</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cultures.html">Cultures</a></li>
+        <li class="nav-item"><a class="nav-link" href="cultural-events.html">Recent Cultural Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourservices.html">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Us Content -->
+<main class="container py-5">
+
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <img src="assets/intro.jpg" alt="Kenya cultural heritage">
+    <p>eCultures Kenya is a digital heritage platform dedicated to celebrating, preserving, and promoting Kenya’s 42 ethnic cultures. It connects tradition and technology to keep our heritage alive for future generations.</p>
+    <a href="about-introduction.html" class="btn-read">Read More</a>
+  </div>
+
+  <div class="section">
+    <h2>2. Mission Statement</h2>
+    <img src="assets/Aim.png" alt="Mission Icon" style="width:120px; height:120px; display:block; margin:0 auto;">
+    <p>Our mission is to preserve, educate, and inspire through Kenya’s cultural stories — connecting communities to their roots while embracing innovation and inclusivity.</p>
+    <a href="about-mission.html" class="btn-read">Read More</a>
+  </div>
+
+  <div class="section">
+    <h2>3. Our Vision</h2>
+    <img src="assets/vision.jpg" alt="Kenya vision image">
+    <p>We envision a future where every Kenyan and global citizen values cultural heritage as a source of pride, identity, and unity.</p>
+    <a href="about-vision.html" class="btn-read">Read More</a>
+  </div>
+
+  <div class="section">
+    <h2>4. Culture Scope</h2>
+    <img src="assets/scope.jpg" alt="Cultural diversity in Kenya">
+    <p>Our scope covers Kenya’s 42 ethnic communities — their art, language, food, music, rituals, and beliefs — emphasizing authenticity and respect for diversity.</p>
+    <a href="about-scope.html" class="btn-read">Read More</a>
+  </div>
+
+  <div class="section">
+    <h2>5. Who We Are</h2>
+    <img src="assets/team.jpg" alt="eCultures Kenya team collaboration">
+    <p>We are a collaborative team of students, educators, and culture enthusiasts curating authentic, research-based cultural information.</p>
+    <a href="about-whoweare.html" class="btn-read">Read More</a>
+  </div>
+
+  <div class="section">
+    <h2>6. Authenticity and Research</h2>
+    <img src="assets/research.jpg" alt="Authenticity and cultural research in Kenya">
+    <p>Our content is based on verified field studies, oral histories, and credible research reviewed by cultural experts and elders.</p>
+    <a href="about-authenticity.html" class="btn-read">Read More</a>
+  </div>
+
+  <div class="section">
+    <h2>7. How We Preserve Culture</h2>
+    <img src="assets/preserve.jpg" alt="Preserving culture through technology">
+    <p>We use digital storytelling, photography, and education to document Kenya’s living traditions for global accessibility.</p>
+    <a href="about-preservation.html" class="btn-read">Read More</a>
+  </div>
+
+  <div class="section">
+    <h2>8. Invitation</h2>
+    <img src="assets/invitation.jpg" alt="Join eCultures Kenya">
+    <p>Join us in celebrating and protecting our heritage. Share stories, volunteer, and help keep Kenya’s culture alive for generations to come.</p>
+    <a href="about-invitation.html" class="btn-read">Read More</a>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 eCultures Kenya | Knowledge Through Heritage</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
